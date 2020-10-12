@@ -75,7 +75,7 @@ for (let i = 0; i < example.length; i++) {
 
 ---
 
-## `Array Methods`🕳
+## `🕳Array Methods🕳`
 
 
 JavaScript: Converts the first letter of each word of a string in upper case
