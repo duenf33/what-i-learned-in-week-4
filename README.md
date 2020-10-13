@@ -179,6 +179,8 @@ And there are more methods that we have also used such as ⇲<br>
 
 * The toUpperCase() method is used to convert the string value to uppercase.<br>
 
+* The toLowerCase() method is used to convert the string value to lowercase.<br>
+
 * The join() method joins all elements of an array into a string.<br>
 
 After completing a for loop we would return the final string :<br>
