@@ -112,8 +112,8 @@ Here below we are going to list only a few of the methods that are out there, on
     // output: Array [4, 5, 1, 2, 3]
   ```
   
-* **`shift()`⇲**
-  Thiss method removes the first element from an array and returns that removed element. This method changes the length of the array.<br>
+* **`shift()`⇲**<br>
+  This method removes the first element from an array and returns that removed element. This method changes the length of the array.<br>
   ```javascript
     const array1 = [1, 2, 3];
 
@@ -126,7 +126,7 @@ Here below we are going to list only a few of the methods that are out there, on
     // output: 1
   ```
   
-* **`split()`⇲**
+* **`split()`⇲**<br>
   The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.<br>
   ```javascript
     const str = 'The quick brown fox jumps over the lazy dog.';
@@ -144,7 +144,7 @@ Here below we are going to list only a few of the methods that are out there, on
     // output: Array ["The quick brown fox jumps over the lazy dog."]
   ```
   
-* **`slice()`⇲**
+* **`slice()`⇲**<br>
   This method returns a copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.<br>
   ```javascript
     const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
@@ -159,7 +159,7 @@ Here below we are going to list only a few of the methods that are out there, on
     // expected output: Array ["bison", "camel", "duck", "elephant"]
   ```
   
-* **`splice()`⇲**
+* **`splice()`⇲**<br>
   The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.<br>
   ```javascript
     const months = ['Jan', 'March', 'April', 'June'];
@@ -175,13 +175,13 @@ Here below we are going to list only a few of the methods that are out there, on
   ```
   
 And there are more methods that we have also used such as ⇲<br>
-* The charAt() method is used to get the specified character from a string.
+* The charAt() method is used to get the specified character from a string.<br>
 
-* The toUpperCase() method is used to convert the string value to uppercase.
+* The toUpperCase() method is used to convert the string value to uppercase.<br>
 
-* The join() method joins all elements of an array into a string.
+* The join() method joins all elements of an array into a string.<br>
 
-After completing a for loop we would return the final string :
+After completing a for loop we would return the final string :<br>
 ```javascript
 return newarray1.join(' ');
 ```
