@@ -35,6 +35,7 @@ yellingChars('oh hello');   // o!h! !h!e!l!l!o!
 ---
 
 ## ⇢ **🛑 What is an array ❓**
+![angry-coder](gifs/angry-coder.gif)
 
 `Arrays` are generally described as `list-like objects`. They are basically single objects that contain multiple values stored in a list. `Array objects` can be stored in `variables` and dealt with in much the same way as any other type of value, the difference being that we can access each value inside the list individually and being able to loop through it and do the same thing to every value.<br>
 
@@ -75,14 +76,115 @@ for (let i = 0; i < example.length; i++) {
 
 ---
 
-## `🕳Array Methods🕳`
+## `🕳 Array Methods 🕳`
+![coding-monkey](gifs/coding-monkey.gif)
+There are different types of methods that are used for many different things in conjunction with `arrays` and `loops`. These help `push`, `pop`, `unshift`, `shift`,`split`, `slice`, `splice`,  etc. an array in order to accomplish the code desired.<br>
+Here below we are going to list only a few of the methods that are out there, only the few that we are allowed to use in this `week 🤷‍♂️` ⇲ <br>
+
+* **`push()`⇲**<br>
+  This method adds one or more elements to the end of an array and returns the new length of the array.<br>
+  ```javascript
+    const animals = ['pigs', 'goats', 'sheep'];
+    const count = animals.push('cows');
+
+    console.log(count);
+    // output: 4
+    console.log(animals);
+    // output: Array ["pigs", "goats", "sheep", "cows"]
+    ```
+* **`pop()`⇲**<br>
+  This method removes the *last* *element* from an array and returns that element. This method changes the length of the array.<br>
+  ```javascript
+    const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+
+    console.log(plants.pop());
+    // output: "tomato"
+  ```
+* **`unshift()`⇲**<br>
+  This method adds new items to the beginning of an array and returns the new length. This method changes the length of an array. To add new items at the end of an array, use the push() method.<br>
+  ```javascript
+    const array1 = [1, 2, 3];
+
+    console.log(array1.unshift(4, 5));
+    // output: 5
+
+    console.log(array1);
+    // output: Array [4, 5, 1, 2, 3]
+  ```
+  
+* **`shift()`⇲**
+  Thiss method removes the first element from an array and returns that removed element. This method changes the length of the array.<br>
+  ```javascript
+    const array1 = [1, 2, 3];
+
+    const firstElement = array1.shift();
+
+    console.log(array1);
+    // output: Array [2, 3]
+
+    console.log(firstElement);
+    // output: 1
+  ```
+  
+* **`split()`⇲**
+  The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.<br>
+  ```javascript
+    const str = 'The quick brown fox jumps over the lazy dog.';
+
+    const words = str.split(' ');
+    console.log(words[3]);
+    // output: "fox"
+
+    const chars = str.split('');
+    console.log(chars[8]);
+    // output: "k"
+
+    const strCopy = str.split();
+    console.log(strCopy);
+    // output: Array ["The quick brown fox jumps over the lazy dog."]
+  ```
+  
+* **`slice()`⇲**
+  This method returns a copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.<br>
+  ```javascript
+    const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+    console.log(animals.slice(2));
+    // expected output: Array ["camel", "duck", "elephant"]
+
+    console.log(animals.slice(2, 4));
+    // expected output: Array ["camel", "duck"]
+
+    console.log(animals.slice(1, 5));
+    // expected output: Array ["bison", "camel", "duck", "elephant"]
+  ```
+  
+* **`splice()`⇲**
+  The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.<br>
+  ```javascript
+    const months = ['Jan', 'March', 'April', 'June'];
+    months.splice(1, 0, 'Feb');
+    // inserts at index 1
+    console.log(months);
+    // expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+    months.splice(4, 1, 'May');
+    // replaces 1 element at index 4
+    console.log(months);
+    // expected output: Array ["Jan", "Feb", "March", "April", "May"]
+  ```
+  
+And there are more methods that we have also used such as ⇲<br>
+* The charAt() method is used to get the specified character from a string.
+
+* The toUpperCase() method is used to convert the string value to uppercase.
+
+* The join() method joins all elements of an array into a string.
+
+After completing a for loop we would return the final string :
+```javascript
+return newarray1.join(' ');
+```
 
 
-JavaScript: Converts the first letter of each word of a string in upper case
 https://www.w3resource.com/javascript-exercises/javascript-function-exercise-5.php
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
-The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
-The slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
